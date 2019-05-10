@@ -28,3 +28,10 @@ function onTodolistClicked(event) {
 }
 addTaskButton.addEventListener('click', onAddTaskClicked);
 todoListContainer.addEventListener('click', onTodolistClicked);
+
+
+addTaskButton.addEventListener('keyup',function(e){
+    if (e.keyCode === 13) {
+    onAddTaskClicked();
+  }
+});
